@@ -28,8 +28,7 @@ class ControllerTest {
         assertEquals(HttpStatus.BAD_REQUEST, result.xday("ten","2000").getStatusCode());
     }
     @Test
-    void wrongTypeYear() {
-        assertEquals(HttpStatus.BAD_REQUEST, result.xday("100","2K22").getStatusCode());
+    void wrongTypeYear() { assertEquals(HttpStatus.BAD_REQUEST, result.xday("100","2K22").getStatusCode());
     }
     @Test
     void wrongValueYear() {
